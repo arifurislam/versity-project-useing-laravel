@@ -258,5 +258,6 @@
     <script src="{{asset('website')}}/js/jquery.magnific-popup.min.js"></script>
     <script src="{{asset('website')}}/js/element-in-view.js"></script>
     <script src="{{asset('website')}}/js/main.js"></script>
+    @stack('js')
 </body>
 </html>

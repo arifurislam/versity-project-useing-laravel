@@ -31,7 +31,6 @@ Route::get('/teachers/{slug}', [WebsiteTeacherController::class, 'show']);
 Route::get('/faculties', [WebsiteFacultyController::class, 'index']);
 Route::get('/faculties/{slug}', [WebsiteFacultyController::class, 'show']);
 Route::get('/gallery/photos', [WebsiteGalleryController::class, 'index']);
-Route::get('/gallery/photos/details', [WebsiteGalleryController::class, 'show']);
 Route::get('/clubs', [WebsiteClubController::class, 'index']);
 Route::get('/news', [WebsiteNewsController::class, 'index']);
 Route::get('/news/{slug}', [WebsiteNewsController::class, 'show']);

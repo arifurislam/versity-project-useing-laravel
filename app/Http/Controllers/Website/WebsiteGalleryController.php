@@ -10,8 +10,5 @@ class WebsiteGalleryController extends Controller
     public function index(){
         return view('website.gallery.index');
     }
-    public function show(){
-        return view('website.gallery.show');
-    }
     
 }
