@@ -97,7 +97,6 @@
                                                 <li><a href="{{url('/clubs')}}">Clubs</a></li>
                                                 <li><a href="{{url('/videos')}}">Video Gallery</a></li>
                                                 <li><a href="{{url('/gallery/photos')}}">Gallery & Photos</a></li>
-                                                <li class="has-sub"><a href="{{url('/faculties')}}">Faculties</a></li>
                                             </ul>
                                         </li>
 
@@ -112,8 +111,8 @@
                                             </a>
                                         </li>
                                         <li class="has-sub">
-                                            <a href="{{url('index.html')}}">
-                                                Apply Now
+                                            <a href="{{url('/faculties')}}">
+                                                Faculties
                                             </a>
                                         </li>
                                         <li class="has-sub">

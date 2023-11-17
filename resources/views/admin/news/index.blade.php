@@ -31,7 +31,7 @@
                             @foreach($allNews as $key => $data)
                             <tr>
                                 <td>{{$key + 1}}</td>
-                                <td>{{Str::limit($data->title,30)}}</td>
+                                <td>{{Str::limit($data->title,20)}}</td>
                                 <td>
                                     @if ($data->status == 1)
                                     <span class="badge badge-primary">Published</span>

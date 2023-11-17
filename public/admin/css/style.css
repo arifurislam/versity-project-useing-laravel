@@ -377,6 +377,7 @@ input[type="radio"],
 input[type="checkbox"] {
     box-sizing: border-box;
     padding: 0;
+    background-color: red !important;
 }
 
 input[type="date"],
@@ -11372,7 +11373,7 @@ sub {
 .footer {
     padding-left: 15.1875rem;
     background-color: #fff;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
 }
 
@@ -12250,15 +12251,23 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 .nk-sidebar .metismenu>li:hover i,
-.nk-sidebar .metismenu>li:focus i,
-.nk-sidebar .metismenu>li.active i {
+.nk-sidebar .metismenu>li:focus i{
     color: #464a53 !important;
+}
+.nk-sidebar .metismenu>li.active i{
+color:white;
+}
+
+.nk-sidebar .metismenu>li.active i:hover{
+color:white !important;
 }
 
 .nk-sidebar .metismenu>li:hover span,
-.nk-sidebar .metismenu>li:focus span,
-.nk-sidebar .metismenu>li.active span {
+.nk-sidebar .metismenu>li:focus span{
     color: #464a53;
+}
+.nk-sidebar .metismenu>li.active span {
+    color: #fff;
 }
 
 .nk-sidebar .metismenu>li:hover>a {
@@ -12266,10 +12275,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     color: #7571f9;
 }
 
-.nk-sidebar .metismenu>li.active>a {
-    background: #F3F1FA;
-    color: #464a53;
-}
+
 
 .nk-sidebar .metismenu>li.active ul a {
     color: #464a53;
@@ -22283,5 +22289,29 @@ table.view_table_custom tr td:last-child{
     text-align: left;
     font-weight: 400;
 }
+.nk-sidebar .metismenu>li.active>a {
+    background: #7571f9;
+    color: #fff !important;
+}
+.nk-sidebar .metismenu>li .active{
+    background-color: #7571f9;
+    color: white !important;
+}
+.nk-sidebar .metismenu>li .active:hover{
+    background-color: #7571f9 !important;
+}
+.nk-sidebar .metismenu>li .active:hover span{
+    color: #fff !important;
+}
+.nk-sidebar .metismenu>li .active:hover i{
+    color: #fff !important;
+}
+.nk-sidebar .metismenu>li .active i{
+color: white !important;
+}
 
+.nk-sidebar .metismenu>li a:hover  i,
+.nk-sidebar .metismenu>li a:hover  span{
+    color: #5E59FD !important;
+}
 /* /custom css */

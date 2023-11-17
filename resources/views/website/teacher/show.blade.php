@@ -21,8 +21,8 @@
             </div>
             <div class="col-lg-7">
                 <h2 class="mb-4">{{$teacher->name}} <br>(<span>{{$teacher->designation}}</span>)</h2>
-                <p class="mb-5">{{$teacher->description}}</p>
-                <ul class="teacher-profileLinks">
+                <p class="mb-5">{!! $teacher->description !!}</p>
+                <ul class="teacher-profileLinks mt-5">
                     <li><a href="{{$teacher->facebook}}">Facebook</a></li>
                     <li><a href="{{$teacher->instagram}}">Instagram</a></li>
                     <li><a href="{{$teacher->twitter}}">Twitter</a></li>

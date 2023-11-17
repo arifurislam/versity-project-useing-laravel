@@ -31,7 +31,7 @@
                             @foreach($departments as $key => $data)
                             <tr>
                                 <td>{{$key + 1}}</td>
-                                <td>{{$data->name}}</td>
+                                <td>{{Str::limit($data->name,15)}}</td>
                                 <td>
                                     @if ($data->status == 1)
                                     <span class="badge badge-primary">Published</span>
@@ -42,7 +42,7 @@
                                 <td><img src="{{asset('storage/department/'.$data->banner)}}" alt="image preview"
                                         class="mt-3 d-block" height="60px">
                                 </td>
-                                <td>{!!  Str::limit(strip_tags($data->details),35,'...') !!} </td>
+                                <td>{!!  Str::limit(strip_tags($data->details),20,'...') !!} </td>
                                 <td>
                                     <a href="{{url('admin/departments/'.$data->id)}}"
                                         class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i></a>

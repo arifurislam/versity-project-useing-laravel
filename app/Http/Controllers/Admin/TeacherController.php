@@ -36,7 +36,7 @@ class TeacherController extends Controller
             'instagram'   => 'required|string|max:255',
             'twitter'     => 'required|string|max:255',
             'media' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
-            'desc'  => 'required|max:400',
+            'details'  => 'required',
         ]);
 
 
@@ -61,7 +61,7 @@ class TeacherController extends Controller
         $teacher->instagram  = $request->instagram;
         $teacher->twitter  = $request->twitter;
         $teacher->photo  = $imageName;
-        $teacher->description  = $request->desc;
+        $teacher->description  = $request->details;
         $teacher->status  = (boolean)$request->status;
         $create = $teacher->save();
         if($create){
@@ -91,7 +91,7 @@ class TeacherController extends Controller
             'instagram'   => 'required|string|max:255',
             'twitter'     => 'required|string|max:255',
             'media' => 'image|mimes:jpg,png,jpeg,gif,svg',
-            'desc'  => 'required|max:400',
+            'desc'  => 'required',
         ]);
 
         $slug = Str::slug($request->name);
@@ -121,6 +121,7 @@ class TeacherController extends Controller
         $teacher->instagram  = $request->instagram;
         $teacher->twitter  = $request->twitter;
         $teacher->photo  = $imageName;
+        $teacher->description  = $request->desc;
         $teacher->status  = (boolean)$request->status;
         $create = $teacher->save();
         if($create){

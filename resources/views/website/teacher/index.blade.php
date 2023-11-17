@@ -8,7 +8,7 @@
 <div class="offcanvas-overly"></div>
 <main>
 
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-60" text align-left>TEACHERS LIST</h1>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="techer-right ml-40">
                         <h3>Speach from <span class="text-danger">{{$teacher->name}}</span></h3>
-                        <p>{{Str::limit($teacher->description ,150)}}</p>
+                        <p>{!!  Str::limit(strip_tags($teacher->description),100,'...') !!}</p>
                         <a href="{{url('teachers/'.$teacher->slug)}}">Read More ...</a>
                      </div>
                 </div>

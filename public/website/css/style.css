@@ -12930,14 +12930,14 @@ blockquote footer {
 .pagination .page-item a.page-link {
     border-radius: 50%;
     padding: 0;
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
-    background: #f8f8f8;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
     color: #9fa7c5;
     font-size: 14px;
     border: none;
     font-weight: 500;
+    text-align: center;
 }
 
 .pagination .page-item:hover a.page-link {
@@ -12985,7 +12985,7 @@ blockquote footer {
 
 .pagination-wrap .pagination li a:hover {
     color: #ffffff;
-    background: #ff7350;
+    background: red;
 }
 
 /* 17. f-cta */
@@ -13817,6 +13817,13 @@ blockquote cite {
     margin-left: 22%;
     margin-top: 20px;
     display: inline-block;
+}
+
+.pagination .page-item:hover a.page-link {
+    box-shadow: 0px 16px 32px 0px rgba(255, 74, 87, 0.2);
+    background: #ff7350;;
+    color: #fff;
+
 }
 
 /* .video-content::before {

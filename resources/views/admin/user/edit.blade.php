@@ -68,7 +68,7 @@
                             <input type="file" name="media" id="imageInput"
                                 class="form-control-file {{$errors->has('media')? 'has-error':''}}">
                             
-                                <img id="imagePreview" src="{{asset('storage/profile/'.$user->profile)}}"
+                                <img id="imagePreview" src="{{asset('storage/valid/white_image.png')}}"
                                 alt="image preview" class="mt-3 d-block" height="50px">
                             @if ($errors->has('media'))
                             <span class="invalid-feedback mb-0" role="alert">

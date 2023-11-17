@@ -34,8 +34,6 @@
                     
                     <span class="brand-title">
                         <h5 class="text-white">BMSC Admin Pannel</h5>
-                        {{-- <img src="{{asset('admin')}}/images/scholl-logo.png" alt="logo"> --}}
-                        {{-- <img src="{{asset('admin')}}/images/logo-text.png" alt="logo"> --}}
                     </span>
                 </a>
             </div>
@@ -123,7 +121,7 @@
             <div class="footer">
                 <div class="copyright">
                     <p>Copyright &copy; Designed & Developed by <a
-                            href="https://themeforest.net/user/quixlab">Quixlab</a> 2023</p>
+                            href="">bu.students.bd@gmail.com</a> 2023</p>
                 </div>
             </div>
         </div>

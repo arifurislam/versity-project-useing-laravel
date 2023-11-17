@@ -10,7 +10,7 @@
 
 <main>
 
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="col-lg-12 my-4">
                 <h2>Visit Our Video Gallary</h2>

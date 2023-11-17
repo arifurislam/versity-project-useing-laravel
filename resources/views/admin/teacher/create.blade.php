@@ -29,7 +29,6 @@
                             </span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Teacher Designation <span class="text-danger">*</span></label>
                             <input type="text" name="designation" value="{{old('designation')}}"
@@ -74,40 +73,41 @@
                             </span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Profile Picture <span class="text-danger">*</span></label>
                             <input type="file" name="media" id="imageInput"
                                 class="form-control-file {{$errors->has('media')? 'has-error':''}}">
-                                @if ($errors->has('media'))
-                                <span class="invalid-feedback mb-0" role="alert">
-                                    <strong>{{ $errors->first('media') }}</strong>
-                                </span>
-                                @endif
+                            @if ($errors->has('media'))
+                            <span class="invalid-feedback mb-0" role="alert">
+                                <strong>{{ $errors->first('media') }}</strong>
+                            </span>
+                            @endif
                             <img id="imagePreview" src="{{asset('storage/valid/white_image.png')}}" alt="image preview"
                                 class="mt-3 d-block" height="50px">
                         </div>
+
                         <div class="basic-form">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Description <span class="text-danger">
+                                <label for="exampleInputEmail1">Details <span class="text-danger">
                                         *</span></label>
-                                <textarea name="desc" class="my_summerNote form-control h-150"></textarea>
+                                <textarea name="details" id="my_summerNote" class="form-control h-150"></textarea>
                             </div>
-                            @if ($errors->has('body'))
+                            @if ($errors->has('details'))
                             <span class="invalid-feedback mb-0" role="alert">
-                                <strong>{{ $errors->first('body') }}</strong>
+                                <strong>{{ $errors->first('details') }}</strong>
                             </span>
                             @endif
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" name="status" type="checkbox">
+                                <input class="" name="status" type="checkbox">
                                 <label class="form-check-label" for="defaultCheck1">
                                     Want to publish ???
                                 </label>
                             </div>
                         </div>
-                        <a href="{{url('admin/users')}}" class="btn btn-danger"><i
+
+                        <a href="{{url('admin/teachers')}}" class="btn btn-danger"><i
                                 class="fa-solid fa-arrow-left pr-2"></i>Back</a>
                         <button type="submit" class="btn btn-primary"><i
                                 class="fa-solid fa-upload fa-beat pr-2"></i>Submit</button>
@@ -122,7 +122,7 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 <script>
     $(document).ready(function () {
-        $(".my_summerNote").summernote();
+        $("#my_summerNote").summernote();
     });
 
 </script>

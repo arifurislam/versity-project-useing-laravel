@@ -16,7 +16,7 @@ class WebsiteNewsController extends Controller
         ->get();
 
         $allpreviousNews = News::select('title','photo','details','slug')
-        ->paginate(4);
+        ->paginate(6);
         return view('website.news.index',compact('latestNews','allpreviousNews'));
     }
 

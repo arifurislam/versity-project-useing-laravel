@@ -6,52 +6,76 @@
 @section('contents')
 <div class="row">
     <div class="col-lg-3 col-sm-6">
-        <div class="card gradient-1">
-            <div class="card-body">
-                <h3 class="card-title text-white">Products Sold</h3>
-                <div class="d-inline-block">
-                    <h2 class="text-white">4565</h2>
-                    <p class="text-white mb-0">Jan - March 2019</p>
+        <a href="{{url('/admin/departments')}}">
+            <div class="card gradient-1">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Total Department</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">
+                            @if($department_count >9)
+                                {{$department_count}}
+                            @else
+                                0{{$department_count}}
+                            @endif
+                        </h2>
+                    </div>
                 </div>
-                <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col-lg-3 col-sm-6">
-        <div class="card gradient-2">
-            <div class="card-body">
-                <h3 class="card-title text-white">Net Profit</h3>
-                <div class="d-inline-block">
-                    <h2 class="text-white">$ 8541</h2>
-                    <p class="text-white mb-0">Jan - March 2019</p>
+        <a href="{{url('/admin/contact')}}">
+            <div class="card gradient-2">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Total Contacts</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">
+                        @if($contact_count >9)
+                                {{$contact_count}}
+                            @else
+                                0{{$contact_count}}
+                            @endif
+                        </h2>  
+                    </div>
                 </div>
-                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col-lg-3 col-sm-6">
-        <div class="card gradient-3">
-            <div class="card-body">
-                <h3 class="card-title text-white">New Customers</h3>
-                <div class="d-inline-block">
-                    <h2 class="text-white">4565</h2>
-                    <p class="text-white mb-0">Jan - March 2019</p>
+        <a href="{{url('admin/teachers')}}">
+            <div class="card gradient-3">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Total Teacher</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">
+                            @if($teacher_count >9)
+                                {{$teacher_count}}
+                            @else
+                                0{{$teacher_count}}
+                            @endif
+                        </h2>
+                    </div>
                 </div>
-                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col-lg-3 col-sm-6">
-        <div class="card gradient-4">
-            <div class="card-body">
-                <h3 class="card-title text-white">Customer Satisfaction</h3>
-                <div class="d-inline-block">
-                    <h2 class="text-white">99%</h2>
-                    <p class="text-white mb-0">Jan - March 2019</p>
+        <a href="{{url('/admin/future')}}">
+            <div class="card gradient-4">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Upcoming Events</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">
+                            @if($event_count >9)
+                                {{$event_count}}
+                            @else
+                                0{{$event_count}}
+                            @endif
+                        </h2>
+                    </div>
                 </div>
-                <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 
